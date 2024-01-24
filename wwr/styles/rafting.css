@@ -40,6 +40,7 @@ a {
 
 .hero h1 {
     position: absolute;
+    display: block;
     top: 10px;
     text-align: center;
     background-color: #1d3557;
@@ -56,8 +57,7 @@ a {
 .hero article {
     position: absolute;
     top: 120px;
-    left: 40px;
-    width: 90%;
+    margin: 2rem;
     background-color: var(--accent2-color);
     color: var(--secondary-color)
 }
@@ -66,4 +66,64 @@ a {
     float: right;
     margin: 30px;
     width: 200px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+header img {
+    grid-column: 1/2;
+    width: 100px;
+    justify-self: center;
+}
+
+header nav {
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.history {
+    background-color: var(--secondary-color);
+}
+
+.history h2 {
+    text-align: center;
+}
+
+.adventure {
+    background-color: var(--secondary-color);
+}
+
+.adventure h2 {
+    text-align: center;
+}
+
+.adventure div {
+    display: flex;
+    gap: 1em;
+    justify-content: space-around;
+}
+
+.adventure div figure {
+    margin: 0;
+}
+
+.adventure div figure img {
+    width: 150px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: var(--accent1-color);
+}
+
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
