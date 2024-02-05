@@ -1,0 +1,23 @@
+body {
+    max-width: 700px;
+    margin: auto;
+
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: gainsboro;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+label,
+input,
+textarea,
+select,
+button {
+    margin-top: 1em;
+    font-size: 1.2em;
+    padding: 1em;
+}
