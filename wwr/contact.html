@@ -45,32 +45,45 @@
                 <figcaption>Employee 3</figcaption>
             </figure>
         </div>
-        <h1>Send us a message</h1>       
+
         <form>
+            <fieldset>
+                <legend>
+                    <h1>Send us a message</h1>       
+                </legend>
+
             <label for="name">Name</label>
-            <input type="text" id="name">
-            
             <label for="email">E-mail</label>
+
+            <input type="text" id="name">  
             <input type="text" id="email">
 
-            <input type="radio" name="purpose" id="1">
-            <label for="1">General Inquiry</label>
-            <input type="radio" name="purpose" id="2">
-            <label for="2">Reservation Question</label>
-            <input type="radio" name="purpose" id="3">
-            <label for="3">Website Suggestion</label>
+            <div class="purpose_section">
+                <input type="radio" name="purpose" id="1">
+                <label for="1">General Inquiry</label>
+                <input type="radio" name="purpose" id="2">
+                <label for="2">Reservation Question</label>
+                <input type="radio" name="purpose" id="3">
+                <label for="3">Website Suggestion</label>
+            </div>
+            
 
-            <label for="message">Message</label>
+            <label class="message" for="message">Message</label>
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
 
-            <input type="checkbox" name="subscribe" id="subscribe">
-            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            <div class="subscribe">
+                <input type="checkbox" name="subscribe" id="subscribe">
+                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+            </div>
+            
 
-            <button type="submit">Submit Form</button>
+            <button type="submit">Send message</button>
+            </fieldset>
+
         </form>
     </main>
     <footer>
-        <p>©2024 🌴 Raftin Site Plan 🌴 Cristofer Amachi 🌴 WDD 130</p>
+        <p>©2024 🌴 Raftin Site Plan 🌴 Cristofer Amachi 🌴 WDD 130 <a href="images/contact-us-wireframe.png">Contact Us Wireframe</a></p>
         <div>
             <a href="https://www.facebook.com/">
                 <img class="media_icon" src="images/facebook.png" alt="Facebook">
