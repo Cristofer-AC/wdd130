@@ -290,3 +290,36 @@ form button {
     padding: 0;
     margin-bottom: 3em;
 }
+
+/* HOME */
+
+#home-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#home-container img {
+    width: 100%;
+}
+
+#hero-container {
+    position: relative;
+}
+
+#hero-container h1 {
+    position: absolute;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(0, 0, 0, .8)
+}
+
+#purpose-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.span-two-columns {
+    grid-column: 1 / 3;
+}
